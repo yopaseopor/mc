@@ -1,24 +1,24 @@
-import {Utils} from "./Utils";
-import {ElementStorage} from "./Logic/ElementStorage";
-import {Changes} from "./Logic/Osm/Changes";
-import {OsmConnection} from "./Logic/Osm/OsmConnection";
-import Locale from "./UI/i18n/Locale";
-import {UIEventSource} from "./Logic/UIEventSource";
-import {LocalStorageSource} from "./Logic/Web/LocalStorageSource";
-import {QueryParameters} from "./Logic/Web/QueryParameters";
-import LayoutConfig from "./Customizations/JSON/LayoutConfig";
-import {MangroveIdentity} from "./Logic/Web/MangroveReviews";
-import InstalledThemes from "./Logic/Actors/InstalledThemes";
-import BaseLayer from "./Models/BaseLayer";
-import Loc from "./Models/Loc";
-import Constants from "./Models/Constants";
+import {Utils} from "Utils";
+import {ElementStorage} from "Logic/ElementStorage";
+import {Changes} from "Logic/Osm/Changes";
+import {OsmConnection} from "Logic/Osm/OsmConnection";
+import Locale from "UI/i18n/Locale";
+import {UIEventSource} from "Logic/UIEventSource";
+import {LocalStorageSource} from "Logic/Web/LocalStorageSource";
+import {QueryParameters} from "Logic/Web/QueryParameters";
+import LayoutConfig from "Customizations/JSON/LayoutConfig";
+import {MangroveIdentity} from "Logic/Web/MangroveReviews";
+import InstalledThemes from "Logic/Actors/InstalledThemes";
+import BaseLayer from "Models/BaseLayer";
+import Loc from "Models/Loc";
+import Constants from "Models/Constants";
 
-import OverpassFeatureSource from "./Logic/Actors/OverpassFeatureSource";
-import LayerConfig from "./Customizations/JSON/LayerConfig";
-import TitleHandler from "./Logic/Actors/TitleHandler";
-import PendingChangesUploader from "./Logic/Actors/PendingChangesUploader";
-import {Relation} from "./Logic/Osm/ExtractRelations";
-import OsmApiFeatureSource from "./Logic/FeatureSource/OsmApiFeatureSource";
+import OverpassFeatureSource from "Logic/Actors/OverpassFeatureSource";
+import LayerConfig from "Customizations/JSON/LayerConfig";
+import TitleHandler from "Logic/Actors/TitleHandler";
+import PendingChangesUploader from "Logic/Actors/PendingChangesUploader";
+import {Relation} from "Logic/Osm/ExtractRelations";
+import OsmApiFeatureSource from "Logic/FeatureSource/OsmApiFeatureSource";
 
 /**
  * Contains the global state: a bunch of UI-event sources

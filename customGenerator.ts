@@ -1,10 +1,10 @@
-import {UIEventSource} from "./Logic/UIEventSource";
-import {GenerateEmpty} from "./UI/CustomGenerator/GenerateEmpty";
-import {LayoutConfigJson} from "./Customizations/JSON/LayoutConfigJson";
-import {OsmConnection} from "./Logic/Osm/OsmConnection";
-import CustomGeneratorPanel from "./UI/CustomGenerator/CustomGeneratorPanel";
-import {LocalStorageSource} from "./Logic/Web/LocalStorageSource";
-import {Utils} from "./Utils";
+import {UIEventSource} from "Logic/UIEventSource";
+import {GenerateEmpty} from "UI/CustomGenerator/GenerateEmpty";
+import {LayoutConfigJson} from "Customizations/JSON/LayoutConfigJson";
+import {OsmConnection} from "Logic/Osm/OsmConnection";
+import CustomGeneratorPanel from "UI/CustomGenerator/CustomGeneratorPanel";
+import {LocalStorageSource} from "Logic/Web/LocalStorageSource";
+import {Utils} from "Utils";
 import LZString from "lz-string";
 
 let layout = GenerateEmpty.createEmptyLayout();

@@ -1,20 +1,20 @@
-import {AllKnownLayouts} from "./Customizations/AllKnownLayouts";
-import {FixedUiElement} from "./UI/Base/FixedUiElement";
-import {InitUiElements} from "./InitUiElements";
-import {QueryParameters} from "./Logic/Web/QueryParameters";
-import {UIEventSource} from "./Logic/UIEventSource";
+import {AllKnownLayouts} from "Customizations/AllKnownLayouts";
+import {FixedUiElement} from "UI/Base/FixedUiElement";
+import {InitUiElements} from "InitUiElements";
+import {QueryParameters} from "Logic/Web/QueryParameters";
+import {UIEventSource} from "Logic/UIEventSource";
 import * as $ from "jquery";
-import LayoutConfig from "./Customizations/JSON/LayoutConfig";
-import {Utils} from "./Utils";
-import MoreScreen from "./UI/BigComponents/MoreScreen";
-import State from "./State";
-import Combine from "./UI/Base/Combine";
-import Translations from "./UI/i18n/Translations";
+import LayoutConfig from "Customizations/JSON/LayoutConfig";
+import {Utils} from "Utils";
+import MoreScreen from "UI/BigComponents/MoreScreen";
+import State from "State";
+import Combine from "UI/Base/Combine";
+import Translations from "UI/i18n/Translations";
 
 
 import CountryCoder from "latlon2country"
 
-import SimpleMetaTagger from "./Logic/SimpleMetaTagger";
+import SimpleMetaTagger from "Logic/SimpleMetaTagger";
 
 // Workaround for a stupid crash: inject the function
 SimpleMetaTagger.coder = new CountryCoder("https://pietervdvn.github.io/latlon2country/");

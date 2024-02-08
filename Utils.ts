@@ -1,4 +1,4 @@
-import * as colors from "./assets/colors.json"
+import * as colors from "assets/colors.json"
 
 export class Utils {
 
@@ -8,7 +8,7 @@ export class Utils {
      * This is a workaround and yet another hack
      */
     public static runningFromConsole = false;
-    public static readonly assets_path = "./assets/svg/";
+    public static readonly assets_path = "assets/svg/";
 
     
     

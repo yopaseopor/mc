@@ -1,14 +1,14 @@
-import {OsmConnection} from "./Logic/Osm/OsmConnection";
-import Combine from "./UI/Base/Combine";
-import {Button} from "./UI/Base/Button";
-import {TextField} from "./UI/Input/TextField";
-import {FixedUiElement} from "./UI/Base/FixedUiElement";
-import {UIElement} from "./UI/UIElement";
-import {UIEventSource} from "./Logic/UIEventSource";
-import {Utils} from "./Utils";
-import {SubtleButton} from "./UI/Base/SubtleButton";
+import {OsmConnection} from "Logic/Osm/OsmConnection";
+import Combine from "UI/Base/Combine";
+import {Button} from "UI/Base/Button";
+import {TextField} from "UI/Input/TextField";
+import {FixedUiElement} from "UI/Base/FixedUiElement";
+import {UIElement} from "UI/UIElement";
+import {UIEventSource} from "Logic/UIEventSource";
+import {Utils} from "Utils";
+import {SubtleButton} from "UI/Base/SubtleButton";
 import LZString from "lz-string";
-import {LayoutConfigJson} from "./Customizations/JSON/LayoutConfigJson";
+import {LayoutConfigJson} from "Customizations/JSON/LayoutConfigJson";
 
 
 const connection = new OsmConnection(false, new UIEventSource<string>(undefined), "");
@@ -87,7 +87,7 @@ function clearAll(preferences){
 }
 
 function SalvageButton(theme: { themeName: string, contents: string }) {
-    return new SubtleButton("./assets/svg/bug.svg", "Download broken theme " + theme.themeName).onClick(
+    return new SubtleButton("assets/svg/bug.svg", "Download broken theme " + theme.themeName).onClick(
         () => {
             Utils.offerContentsAsDownloadableFile(theme.contents, theme.themeName + ".json")
         }
@@ -129,7 +129,7 @@ function createTable(preferences: any) {
             "<table>",
             ...prefs,
             "</table>",
-        new SubtleButton("./assets/svg/delete_icon.svg", "Delete all mapcomplete preferences (mangrove identies are preserved)").onClick(() => clearAll(preferences))]
+        new SubtleButton("assets/svg/delete_icon.svg", "Delete all mapcomplete preferences (mangrove identies are preserved)").onClick(() => clearAll(preferences))]
     ).AttachTo("maindiv");
 }
 

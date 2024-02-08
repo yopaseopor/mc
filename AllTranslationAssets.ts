@@ -1,4 +1,4 @@
-import CompiledTranslations from "./assets/generated/CompiledTranslations";
+import CompiledTranslations from "assets/generated/CompiledTranslations";
 
 export default class AllTranslationAssets {
 
