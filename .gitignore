@@ -1,0 +1,15 @@
+dist/*
+node_modules
+.cache/*
+.idea/*
+scratch
+assets/editor-layer-index.json
+assets/generated/*
+/*.webmanifest
+/*.html
+!/index.html
+.parcel-cache
+Docs/Tools/stats.*.json
+Docs/Tools/stats.csv
+missing_translations.txt
+*.swp

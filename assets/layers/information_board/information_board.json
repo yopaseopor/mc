@@ -1,0 +1,58 @@
+{
+  "id": "information_board",
+  "name": {
+    "nl": "Informatieborden",
+    "en": "Information boards",
+    "it": "Pannelli informativi",
+    "fr": "Panneaux d'informations",
+    "de": "Informationstafeln"
+  },
+  "minzoom": 12,
+  "source": {
+    "osmTags": {
+      "and": [
+        "information=board"
+      ]
+    }
+  },
+  "title": {
+    "render": {
+      "nl": "Informatiebord",
+      "en": "Information board",
+      "it": "Pannello informativo",
+      "fr": "Panneau d'informations",
+      "de": "Informationstafel"
+    }
+  },
+  "tagRenderings": [
+    "images"
+  ],
+  "hideUnderlayingFeaturesMinPercentage": 0,
+  "icon": {
+    "render": "./assets/layers/information_board/board.svg"
+  },
+  "width": {
+    "render": "8"
+  },
+  "iconSize": {
+    "render": "40,40,center"
+  },
+  "color": {
+    "render": "#00f"
+  },
+  "presets": [
+    {
+      "tags": [
+        "tourism=information",
+        "information=board"
+      ],
+      "title": {
+        "nl": "Informatiebord",
+        "en": "Information board",
+        "it": "Pannello informativo",
+        "fr": "Panneau d'informations",
+        "de": "Informationstafel"
+      }
+    }
+  ]
+}
